@@ -1,6 +1,6 @@
 ## Alfain
 
-document review management
+document review management frappe ERPNext app.
 
 #### License
 
