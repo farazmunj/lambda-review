@@ -223,6 +223,19 @@ fixtures = [
         "dt": "DocType",
         "filters": {
             "custom": 1
-            }
         }
-    ]
+    },
+    {
+        "dt" : "Custom Field"
+    },
+    {
+        "dt" : "Workflow"
+    },
+    {
+        "dt" : "Workflow State"
+    }
+    ,
+    {
+        "dt" : "Workflow Action Master"
+    }
+]
