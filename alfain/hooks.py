@@ -246,4 +246,10 @@ fixtures = [
     {
         "dt":  "Role Profile"
     }
+    # Not possible to export data form table when its starts with Doc keyword
+    #  ,
+    # {
+    #     "doctype":  "DocPerm",
+    #     "filters" : ["parent", "in", "Project,Building,Submittal,Task"]
+    # }
 ]
