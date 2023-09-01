@@ -216,4 +216,6 @@ app_license = "MIT"
 #	"alfain.auth.validate"
 # ]
 
-fixtures = ["Project"]
+# Fixtures export
+
+fixtures = ["DocType"]
