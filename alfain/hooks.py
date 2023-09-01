@@ -218,4 +218,11 @@ app_license = "MIT"
 
 # Fixtures export
 
-fixtures = ["DocType"]
+fixtures = [
+    {
+        "dt": "DocType",
+        "filters": {
+            "custom": 1
+            }
+        }
+    ]
