@@ -216,4 +216,4 @@ app_license = "MIT"
 #	"alfain.auth.validate"
 # ]
 
-fixtures = ["Custom Field"]
+fixtures = ["Project"]
