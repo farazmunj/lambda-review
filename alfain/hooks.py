@@ -215,3 +215,5 @@ app_license = "MIT"
 # auth_hooks = [
 #	"alfain.auth.validate"
 # ]
+
+fixtures = ["Custom Field"]
