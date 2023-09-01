@@ -1,0 +1,245 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2023-07-13 15:10:10.553833",
+  "name": "Inventory",
+  "role_profile": "Inventory",
+  "roles": [
+   {
+    "parent": "Inventory",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Inventory",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "Inventory",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Item Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2023-07-13 15:10:10.561721",
+  "name": "Manufacturing",
+  "role_profile": "Manufacturing",
+  "roles": [
+   {
+    "parent": "Manufacturing",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Manufacturing",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Manufacturing User"
+   },
+   {
+    "parent": "Manufacturing",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Manufacturing Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2023-07-13 15:10:10.567373",
+  "name": "Accounts",
+  "role_profile": "Accounts",
+  "roles": [
+   {
+    "parent": "Accounts",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "Accounts",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2023-07-13 15:10:10.572945",
+  "name": "Sales",
+  "role_profile": "Sales",
+  "roles": [
+   {
+    "parent": "Sales",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Sales User"
+   },
+   {
+    "parent": "Sales",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Sales",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Sales Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2023-07-13 15:10:10.575835",
+  "name": "Purchase",
+  "role_profile": "Purchase",
+  "roles": [
+   {
+    "parent": "Purchase",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Item Manager"
+   },
+   {
+    "parent": "Purchase",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Purchase",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "Purchase",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Purchase Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2023-07-17 15:25:38.089394",
+  "name": "HR",
+  "role_profile": "HR",
+  "roles": [
+   {
+    "parent": "HR",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR User"
+   },
+   {
+    "parent": "HR",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR Manager"
+   },
+   {
+    "parent": "HR",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Leave Approver"
+   },
+   {
+    "parent": "HR",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Expense Approver"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2023-08-10 13:01:10.421655",
+  "name": "Project Users",
+  "role_profile": "Project Users",
+  "roles": [
+   {
+    "parent": "Project Users",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Projects User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2023-08-18 10:39:02.000608",
+  "name": "Engineer",
+  "role_profile": "Engineer",
+  "roles": [
+   {
+    "parent": "Engineer",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Engineer"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2023-08-18 10:46:57.947411",
+  "name": "Engineering Lead",
+  "role_profile": "Engineering Lead",
+  "roles": [
+   {
+    "parent": "Engineering Lead",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Engineering Lead"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2023-08-18 10:47:15.865106",
+  "name": "Manager",
+  "role_profile": "Manager",
+  "roles": [
+   {
+    "parent": "Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2023-08-18 10:47:36.642194",
+  "name": "Client PM",
+  "role_profile": "Client PM",
+  "roles": [
+   {
+    "parent": "Client PM",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Client PM"
+   }
+  ]
+ }
+]
