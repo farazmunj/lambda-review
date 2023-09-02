@@ -220,8 +220,8 @@ app_license = "MIT"
 
 fixtures = [
     {
-        "dt": "DocType",
-        "filters": {
+        "dt" : "DocType",
+        "filters" : {
             "custom": 1
         }
     },
@@ -233,9 +233,23 @@ fixtures = [
     },
     {
         "dt" : "Workflow State"
-    }
-    ,
+    },
     {
         "dt" : "Workflow Action Master"
+    },
+    {
+        "dt":  "Role",
+        "filters" : {
+            "is_custom": 1
+        }
+    },
+    {
+        "dt":  "Role Profile"
     }
+    # Not possible to export data form table when its starts with Doc keyword
+    #  ,
+    # {
+    #     "doctype":  "DocPerm",
+    #     "filters" : ["parent", "in", "Project,Building,Submittal,Task"]
+    # }
 ]
