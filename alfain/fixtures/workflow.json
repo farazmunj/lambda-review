@@ -4,7 +4,7 @@
   "doctype": "Workflow",
   "document_type": "Task",
   "is_active": 1,
-  "modified": "2023-08-18 12:56:27.911997",
+  "modified": "2023-09-06 14:04:20.980949",
   "name": "Project Task workflow",
   "override_status": 0,
   "send_email_alert": 0,
@@ -23,7 +23,85 @@
     "update_value": "Draft"
    },
    {
+    "allow_edit": "Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Project Task workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Open",
+    "update_field": "status",
+    "update_value": "Open"
+   },
+   {
+    "allow_edit": "Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Project Task workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Pending Review",
+    "update_field": "status",
+    "update_value": "Pending Review"
+   },
+   {
+    "allow_edit": "Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Project Task workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Completed",
+    "update_field": "status",
+    "update_value": "Completed"
+   },
+   {
+    "allow_edit": "Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Project Task workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Cancelled",
+    "update_field": "status",
+    "update_value": "Cancelled"
+   },
+   {
     "allow_edit": "Engineer",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Project Task workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Open",
+    "update_field": "status",
+    "update_value": "Open"
+   },
+   {
+    "allow_edit": "Engineering Lead",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Project Task workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Draft",
+    "update_field": "status",
+    "update_value": "Draft"
+   },
+   {
+    "allow_edit": "Engineering Lead",
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -62,7 +140,7 @@
     "update_value": "Overdue"
    },
    {
-    "allow_edit": "Manager",
+    "allow_edit": "Engineer",
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -70,22 +148,9 @@
     "parent": "Project Task workflow",
     "parentfield": "states",
     "parenttype": "Workflow",
-    "state": "Completed",
+    "state": "Open",
     "update_field": "status",
-    "update_value": "Completed"
-   },
-   {
-    "allow_edit": "Manager",
-    "doc_status": "0",
-    "is_optional_state": 0,
-    "message": null,
-    "next_action_email_template": null,
-    "parent": "Project Task workflow",
-    "parentfield": "states",
-    "parenttype": "Workflow",
-    "state": "Cancelled",
-    "update_field": "status",
-    "update_value": "Cancelled"
+    "update_value": "Open"
    }
   ],
   "transitions": [
@@ -101,6 +166,61 @@
     "state": "Draft"
    },
    {
+    "action": "Request Review",
+    "allow_self_approval": 1,
+    "allowed": "Manager",
+    "condition": null,
+    "next_state": "Pending Review",
+    "parent": "Project Task workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Open"
+   },
+   {
+    "action": "Cancel",
+    "allow_self_approval": 1,
+    "allowed": "Manager",
+    "condition": null,
+    "next_state": "Cancelled",
+    "parent": "Project Task workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Open"
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Manager",
+    "condition": null,
+    "next_state": "Open",
+    "parent": "Project Task workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Pending Review"
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Manager",
+    "condition": null,
+    "next_state": "Completed",
+    "parent": "Project Task workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Pending Review"
+   },
+   {
+    "action": "Reset",
+    "allow_self_approval": 1,
+    "allowed": "Manager",
+    "condition": null,
+    "next_state": "Draft",
+    "parent": "Project Task workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Cancelled"
+   },
+   {
     "action": "Accept Draft",
     "allow_self_approval": 1,
     "allowed": "Engineering Lead",
@@ -114,7 +234,7 @@
    {
     "action": "Request Review",
     "allow_self_approval": 1,
-    "allowed": "Engineer",
+    "allowed": "Engineering Lead",
     "condition": null,
     "next_state": "Pending Review",
     "parent": "Project Task workflow",
@@ -145,26 +265,15 @@
     "state": "Pending Review"
    },
    {
-    "action": "Cancel",
+    "action": "Request Review",
     "allow_self_approval": 1,
-    "allowed": "Manager",
+    "allowed": "Engineer",
     "condition": null,
-    "next_state": "Cancelled",
+    "next_state": "Pending Review",
     "parent": "Project Task workflow",
     "parentfield": "transitions",
     "parenttype": "Workflow",
     "state": "Open"
-   },
-   {
-    "action": "Reset",
-    "allow_self_approval": 1,
-    "allowed": "Manager",
-    "condition": null,
-    "next_state": "Draft",
-    "parent": "Project Task workflow",
-    "parentfield": "transitions",
-    "parenttype": "Workflow",
-    "state": "Cancelled"
    }
   ],
   "workflow_name": "Project Task workflow",
