@@ -5380,7 +5380,7 @@
   "make_attachments_public": 0,
   "max_attachments": 0,
   "migration_hash": null,
-  "modified": "2023-09-06 09:29:39.832599",
+  "modified": "2023-09-06 09:33:16.801697",
   "module": "Projects",
   "name": "Quality Check",
   "name_case": "",
@@ -5476,7 +5476,7 @@
     "select": 0,
     "set_user_permissions": 0,
     "share": 1,
-    "submit": 1,
+    "submit": 0,
     "write": 1
    },
    {
